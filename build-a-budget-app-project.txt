@@ -1,0 +1,141 @@
+** start of main.py **
+
+import math
+
+class Category:
+    def __init__(self, name):
+        self.name = name
+        self.balance = 0
+        self.ledger = [] # list to store transactions
+        self.withdrawals = 0
+
+    def __str__(self):
+        return print_budget(self)
+
+    def deposit(self, amount, description=''):
+        self.ledger.append({'amount': amount, 'description': description})
+        self.balance += amount
+        return self.balance
+    
+    def withdraw(self, amount, description=''):
+        if self.check_funds(amount):
+            self.ledger.append({'amount': -amount, 'description': description})
+            self.balance -= amount
+            self.withdrawals += amount
+            return True
+        return False
+    
+    def transfer(self, amount, other_category):
+        if self.check_funds(amount):
+            self.balance -= amount
+            # Deduct from self
+            self.ledger.append({'amount': -amount, 'description': 'Transfer to ' + other_category.name})
+            # Add to other category
+            other_category.balance += amount
+            other_category.ledger.append({'amount': amount, 'description': 'Transfer from ' + self.name})
+            return True
+        return False
+    
+    def get_balance(self):
+        return self.balance
+
+    def check_funds(self, amount):
+        return self.balance >= amount
+
+def print_budget(category):
+    line = ''
+    line_length = 30
+    centered_name = category.name.center(line_length, '*')
+    line += centered_name + '\n'
+    for item in category.ledger:
+        # truncate description to 23 characters
+        desc = item['description'][:23]
+        # Format amount with 2 decimal places, right justified in 7 spaces
+        amt = f"{item['amount']:7.2f}"
+        line += f'{desc:<23}{amt:>7}\n'
+    line += f'Total: {category.balance:.2f}'
+    return line
+
+def create_spend_chart(categories):
+    bar_chart = 'Percentage spent by category\n'
+    tot_withdrawals = 0
+    for cat in categories:
+        tot_withdrawals += cat.withdrawals
+    
+    percentages = {}
+    for cat in categories:
+        percent = (cat.withdrawals / tot_withdrawals) * 100 if tot_withdrawals > 0 else 0
+        rounded_percent = math.floor(percent / 10) * 10
+        percentages[cat] = rounded_percent
+
+    bar_chart += draw_vertical_bar_chart(percentages)
+    
+    # Determine max length of category names
+    max_len = max(len(cat.name) for cat in categories)
+   
+    # Set each letter of each category vertically
+    for i in range(max_len):
+        line = '    '
+        for cat in categories:
+            if i < len(cat.name):
+                line += f' {cat.name[i]} '
+            else:
+                line += '   '
+        line += ' '
+        if i < max_len - 1:
+            line += '\n'
+        bar_chart += line
+    return bar_chart
+
+def draw_vertical_bar_chart(percentages):
+    # Define labels from 0 to 100 in 10 increments
+    levels = list(range(100, -1, -10))
+    categories = list(percentages.keys())
+
+    # Determine the height of the chart (number of rows)
+    max_height = len(levels)
+ 
+    # For each level, set vertical chart
+    vertical_chart = ''
+    for level in levels:
+        row = ''
+        for cat in categories:
+            percent = percentages[cat]
+            if percent >= level:
+                row += ' o '
+            else:
+                row += '   '
+        vertical_chart += f'{level:3}|{row} \n'
+    vertical_chart += '    ' + '---'*len(categories) + '-\n'
+
+    return vertical_chart
+
+if __name__ != '_main_':
+    food = Category('Food')
+    food.deposit(900, 'deposit')
+    food.withdraw(45.67, 'milk, cereal, eggs, bacon, bread')
+    #food.withdraw(15.89, 'restaurant and more food for dessert')
+    clothing = Category('Clothing')
+    clothing.deposit(500, 'initial deposit')
+    clothing.withdraw(122.30, 'pajamas')
+    clothing.withdraw(20, 'socks')
+    auto = Category('Auto')
+    auto.deposit(1000, 'initial deposit')
+    auto.withdraw(200, 'wipers')
+    #entertainment = Category('Entertainment')
+    #entertainment.deposit(100, 'initial deposit')
+    #entertainment.withdraw(80, 'concert')
+    food.transfer(50, clothing)
+
+    print(food)
+    print(clothing)
+    print(auto)
+
+    # Create a list of categories
+    categories = [food, clothing, auto]
+    chart = create_spend_chart(categories)
+    print(chart)
+
+
+** end of main.py **
+
