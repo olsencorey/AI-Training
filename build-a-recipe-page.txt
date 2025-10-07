@@ -1,0 +1,43 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicken Pot Pie</title>
+</head>
+<body>
+  <!-- Your content goes here -->
+  <h1>Chicken Pot Pie Recipe</h1>
+  <p>This is Christine Kozsuch's Yummy recipe</p>
+  <h2>Ingredients</h2>
+  <ul>
+    <li>1 cup carrots</li>
+    <li>1 cup frozen peas</li>
+    <li>1/3 cup chopped onions</li>
+    <li>1 peeled potato, diced</li>
+    <li>1/3 cup butter</li>
+    <li>1/3 cup flour</li>
+    <li>1/2 tsp salt</li>
+    <li>1/4 tsp pepper</li>
+    <li>1 3/4 cup chicken broth</li>
+    <li>2/3 cup milk</li>
+    <li>3 cup chicken breasts, cooked and shredded</li>
+    <li>2 pie crusts (9 in.)</li>
+  </ul>
+  <h2>Instructions</h2>
+  <ol>
+    <li>In a large skillet, melt butter and add onions, salt, and pepper. Boil carrots and potatoes until somewhat soft. Cook chicken and cube. When onions are soft, add potatoes, carrots, and flour. Stir and cook until bubbly, remove from heat. Stir in chicken broth and milk. Stir continuously and heat to boiling. Boil one minute without stirring. Stir in peas and chicken.</li>
+    <li>Prepare bottom pie crust and pour chicken mixture into crust. Add top crust and crimp edges of pie. Prick top of crust.</il>
+    <li>Bake at 425 degrees for about 45 minutes. Cool 5 to 10 minutes before serving.</li>
+    <li>Chicken pot pies can also be frozen before baking for use later. When ready to use, thaw in refrigerator and bake as directed above.</il>
+  </ol>
+  <img src="https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg" alt="Chicken Pot Pie">
+
+</body>
+
+</html>
+
+** end of index.html **
+
