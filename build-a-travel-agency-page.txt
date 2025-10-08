@@ -1,0 +1,42 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="The greatest Travel Agency.">
+  <title>Exotic Travel Agency</title>
+</head>
+<body>
+  <h1>Travel Designations</h1>
+  <p>The most exotic locations</p>
+  <h2>Packages</h2>
+  <p>Different Packages Offered</p>
+  <ul>
+    <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+    <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+  </ul>
+  <h2>Top Itineraries</h2>
+  <figure>
+    <a href="https://www.freecodecamp.org/learn" target="_blank">
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="Ancient Colosseum in Rome">
+    </a>
+    <figcaption>Visit the Colosseum in Rome</figcaption>
+  </figure>
+  <figure>
+    <a href="https://www.freecodecamp.org/learn" target="_blank">
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="Snowy Alps Mountain Region">
+    </a>
+    <figcaption>Explore the Alps mountain range</figcaption>
+  </figure>
+  <figure>
+    <a href="https://www.freecodecamp.org/learn" target="_blank">
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="Serene Ocean view with waves">
+    </a>
+    <figcaption>Relax by the sea</figcaption>
+  </figure>
+</body>
+</html>
+
+** end of index.html **
+
