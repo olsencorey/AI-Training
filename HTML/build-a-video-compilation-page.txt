@@ -1,0 +1,63 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+
+<body>
+  <main>
+      <h1>Video Compilation Page of Todd Talks</h1>
+      <p>A compilation of Todd talks videos - enjoy</p>
+      <section>
+        <h2>Flight of the Bumblebee</h2>
+        <p>This is video 1 about Flight of the Bumblebee</p>
+        <iframe
+          title="Todd Talks: Flight of the Bumblebee"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/7Zh-n0fCJrE"
+          allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+      <section>
+        <h2>Live with Color</h2>
+        <p>This is video 2 about live with color</p>
+        <iframe
+          title="Todd Talks: Live with Color"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/GpKVpBvAT6g"
+          allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+
+      <section>
+        <h2>Heart of service</h2>
+        <p>This is video 3 about the heart of service</p>
+        <iframe
+          title="Todd Talks: Heart of Service"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Kjp1sCUsDy8"
+          allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+  </main>
+</body>
+
+</html>
+
+** end of index.html **
+
