@@ -1,0 +1,63 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Full Stack Developer Survey</h1>
+      <p id="description">
+        Thank you for your interest in full stack developing. Please take this survey to help me gain perspective on why you enjoy this type of developing.
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label for="name">Name (required)</label>
+        <input type="text" id="name" name="name" placeholder="Johnny John" required size"40">
+        <label id="name-label">Purpose is to get the developer's full name</label>
+        <label for="email">Email address (required):</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required size="20">
+        <label id="email-label">Purpose is to get the developer's email</label>
+        <label for="number">Enter a valid age (in years)</label>
+        <input type="number" id="number" name="number" placeholder="40" min="0" max="120">
+        <label id="number-label">Purpose is to get the developer's age</label>
+        <label for="dropdown">How many years of you been developing?</label>
+        <select name="dropdown" id="dropdown">
+          <option value="1">less than 1</option>
+          <option value="5">less than or equal to 5</option>
+          <option value="10">less than or equal to 10</option>
+          <option value="Over">Over 10</option>
+        </select>
+        <fieldset>
+          <legend>Are you happy with your development?</legend>
+          <input id="yes-option" type="radio" name="happiness" value="happiness">
+          <label for="yes-option">Yes</label>
+          <input id="no-option" type="radio" name="happiness"  value="happiness">
+          <label for="no-option">No</label>
+        </fieldset>
+        <fieldset>
+          <legend>Why did you choose to become a full stack developer? (Check all that apply)</legend>
+
+          <input type="checkbox" id="job" name="job" value="job">
+          <label for="job">Job</label>
+
+          <input type="checkbox" id="hobby" name="hobby" value="hobby">
+          <label for="hobby">Hobby</label>
+          
+          <input type="checkbox" id="prestige" name="prestige" value="prestige">
+          <label for="prestige">Prestige</label>
+
+        </fieldset>
+
+        <label for="comments">Other Comments?</label>
+        <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+        <button type="submit" id="submit" text="submit">Submit</button>
+      </form>
+  </body>
+</html>
+
+** end of index.html **
+
