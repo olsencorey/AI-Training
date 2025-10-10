@@ -1,0 +1,45 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+  <h1>Checkout</h1>
+  <section>
+    <h2>Your Cart</h2>
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Picture of unsolved Rubik's Cube." />
+  </section>
+  <section>
+    <h2>Payment Information</h2>
+    <form>
+      <label for="card-name">Card Name
+        <span aria-hidden="true">*</span>            
+      </label>
+      <input type="text" id="card-name" name="card-name" required /> 
+      <label for="card-number">Credit Card Number
+          <span aria-hidden="true">*</span>
+      </label>
+      <input type="text" id="card-number" name="card-number" required aria-describedby="card-number-help" />
+      <p id="card-number-help">Format for credit card number should be XXXX-XXXX-XXXX-XXXX.</p>
+      <label for="expiration-date">Expiration Date
+          <span aria-hidden="true">*</span>
+      </label>
+      <input type="text" id="expiration-date" name="expiration-date" required />
+      <label for="security-code">Security Code
+          <span aria-hidden="true">*</span>
+      </label>
+      <input type="number" id="security-code" name="security-code" required aria-describedby="security-code-help" pattern="\d{3} maxlength="3" />
+      <p id="security-code-help">Add 3 digit security code found on back of card.</p>
+    </form>
+  </section>
+</body>
+
+</html>
+
+** end of index.html **
+
