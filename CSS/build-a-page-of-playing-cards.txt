@@ -1,0 +1,98 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Cards</title>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <main id="playing-cards">
+    <div class="card">♠
+      <div class="left">
+      </div>
+      <div class="middle">
+      </div>
+      <div class="right">
+      </div>
+    </div>
+    <div class="card">♣
+      <div class="left">
+      </div>
+      <div class="middle">
+      </div>
+      <div class="right">
+      </div>
+    </div>
+    <div class="card red">♥
+      <div class="left">
+      </div>
+      <div class="middle">
+      </div>
+      <div class="right">
+      </div>
+    </div>
+    <div class="card red">♦
+      <div class="left">
+      </div>
+      <div class="middle">
+      </div>
+      <div class="right">
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.red {
+  color: #f00;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.middle {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+** end of styles.css **
+
