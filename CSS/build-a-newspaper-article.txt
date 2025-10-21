@@ -1,0 +1,73 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Article</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="newspaper">
+      <div class="name">West Chester Times</div>
+      <div class="date">October 20th, 2025</div>
+      <div class="headline">Volleyball  Team wins states!!!</div>
+      <div class="sub-headline">Royal Legends are legendary!</div>
+      <div class="author">Ben Olsen</div>
+      <p class="text">The volleyball team faced numerous challenges throughout the season, from injuries to tough opponents, but their unwavering determination kept them pushing forward. Underdogs in many eyes, they trained tirelessly, supporting each other both on and off the court. Their teamwork and resilience became their greatest strengths, allowing them to rise above setbacks and maintain focus on their ultimate goal. Each match was a test of their perseverance, and they responded with fierce dedication and strategic plays that kept their fans inspired.</p>
+      <p class="text">Against all expectations, the team made it to the state championship, where they faced a formidable rival. The game was intense, with momentum shifting back and forth, but the players’ relentless spirit carried them through. In a thrilling final set, they displayed incredible skill and heart, ultimately securing the victory that had seemed impossible at the start of the season. Their triumph was a testament to their hard work, unity, and refusal to give up, inspiring their school and community with a story of perseverance and victory.</p>
+    </div>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+html {
+  font-size: 24px;
+}
+
+.newspaper {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.name {
+  font-size: 2rem;
+  font-family: Times New Roman, serif;
+}
+
+.name,
+.author {
+  text-transform: uppercase;
+}
+
+.headline {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sub-headline {
+  font-weight: 100;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.text {
+  text-indent: 20px;
+  line-height: 2em;
+}
+
+.text:first-letter {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+** end of styles.css **
+
