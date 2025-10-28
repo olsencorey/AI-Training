@@ -1,0 +1,105 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Newspaper Layout</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <main class="newspaper-layout">
+    <header class="title">
+      <h1>West Chester Daily Chronicle</h1>
+    </header>
+
+    <figure class="cover-image">
+      <img src="alien-invasion-west-chester.png" alt="One-eyed alien with green teeth in West Chester town square" />
+    <figcaption>Artist’s depiction of the one-eyed, green-toothed aliens invading West Chester." </figcaption>
+    </figure>
+    <article class="feature-article">
+      <h2>Aliens Invade West Chester: Residents Stunned by One-Eyed Visitors with Green Teeth</h2>
+      <p>West Chester, PA — In a shocking event late Monday evening, residents of West Chester were awakened by a dazzling flash in the night sky as a group of unknown visitors descended upon the town center.
+Eyewitnesses described the aliens as distinctly memorable: "They all had just one enormous eye in the center of their heads," said local resident Maria Kirkland, "and when they smiled, their teeth were a bright, glowing green. It was honestly surreal!"
+The extraterrestrial newcomers made no immediate hostile gestures, but their arrival caused a frenzy. The local police and emergency services quickly cordoned off Gay Street as dozens of the one-eyed, green-toothed invaders mingled with curious onlookers. Reports indicate the creatures communicated in an unrecognizable language comprised solely of melodic chirps and glimmering light patterns emitted from their singular eyes.
+"I’ve never seen anything like it," said West Chester mayor Jim Reynolds, who was on the scene within minutes. "They didn’t seem interested in violence, but clearly wanted to be noticed."
+Some townsfolk bravely approached the visitors, who offered curious hand signals and flashed wide, green-toothed grins. Schools are closed today, and officials urge everyone to remain indoors until more is understood about the aliens' intentions.
+The skies above West Chester remain clear, but authorities across Chester County are on high alert in case of further extraterrestrial activity. Scientists from Philadelphia and Washington are said to be en route to examine the site and, hopefully, start a dialogue with the one-eyed, green-toothed newcomers.
+"Whatever their message," Reynolds said, "West Chester welcomes diplomacy—and hopes for peace with our new interstellar guests."</p>
+    </article>
+    <article class="small-article1">
+      <h3>Local Bakery Wins National Award</h3>
+      <p>West Chester’s own Sugar Spoon Bakery took home the grand prize at the National Pastry Competition this week. Owner Tia Rodriguez credits her victory to her signature salted caramel macarons, which judges called “a bite of heaven.” Crowds lined up early at the bakery Tuesday hoping to try a taste of the winning treats.</p>
+    </article>
+    <article class="small-article2">
+      <h3>West Chester University Launches New AI Degree</h3>
+      <p>In response to booming interest in technology, West Chester University has announced a brand new undergraduate program in Artificial Intelligence. University Dean Mark Stevens says, “We want to ensure our students are prepared for the jobs of tomorrow.” The first AI courses will be offered next fall, with enrollments already filling quickly.</p>
+    </article>
+    <article class="small-article3">
+      <h3>Historic Oak Tree Saved by Community Effort</h3>
+      <p>The 200-year-old “Liberty Oak,” threatened by recent construction downtown, has been spared thanks to a grassroots campaign led by local students. After a petition gathered over 5,000 signatures, developers agreed to reroute planned utility lines. The tree will now be the centerpiece of Liberty Square, set to open in summer 2026.</p>
+    </article>
+    <article class="secondary-article">
+      <h2>Weather Forecast</h2>
+      <p>Meteorologists warn that after yesterday's alien visit, residents may experience light fog in the morning, clearing to sunshine by afternoon. Keep an eye on the skies—just in case!
+      </p>
+    </article>
+  </main>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+.title {
+  grid-area: title;
+}
+
+.feature-article {
+  grid-area: feature-article;
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+}
+
+.cover-image {
+  grid-area: cover-image;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+.newspaper-layout {
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+** end of styles.css **
+

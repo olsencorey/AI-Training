@@ -1,0 +1,121 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability Table</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <table>
+    <caption>Availability Table</caption>
+    <thead>     
+      <tr>
+        <th></th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="sharp">
+        <th class="time">8:00 AM</th>
+        <td class="available-1"></td>
+        <td class="available-3"></td>
+        <td class="available-5"></td>
+      </tr>
+      <tr class="half">
+        <th class="time">9:00 AM</th>
+        <td class="available-2"></td>
+        <td class="available-4"></td>
+        <td class="available-5"></td>
+      </tr>
+      <tr class="sharp">
+        <th class="time">10:00 AM</th>
+        <td class="available-2"></td>
+        <td class="available-3"></td>
+        <td class="available-2"></td>
+      </tr>
+      <tr class="half">
+        <th class="time">11:00 AM</th>
+        <td class="available-1"></td>
+        <td class="available-4"></td>
+        <td class="available-0"></td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="legend">
+    <span>Availability</span>
+    <div id="legend-gradient"></div>
+  </div>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+:root {
+  --color0: #e0e0e0;
+  --color1: #b3e5fc;
+  --color2: #81d4fa;
+  --color3: #4fc3f7;
+  --color4: #538cc6;
+  --color5: #bb99ff;
+  --solid-border: 2px solid #333;
+  --dashed-border: 2px dashed #333; 
+}
+
+.available-0 {
+  background-color: var(--color0);
+ }
+
+.available-1 {
+  background-color: var(--color1);
+ }
+
+.available-2 {
+  background-color: var(--color2);
+ }
+
+.available-3 {
+  background-color: var(--color3);
+ }
+
+.available-4 {
+  background-color: var(--color4);
+ }
+
+.available-5 {
+  background-color: var(--color5);
+ }
+
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+#legend-gradient {
+  height: 24px;
+  width: 100%;
+  background-image: linear-gradient(
+  to right,
+  var(--color0) 0% 17%,
+  var(--color1) 17% 33%,
+  var(--color2) 33% 50%,
+  var(--color3) 50% 67%,
+  var(--color4) 67% 83%,
+  var(--color5) 83% 100%
+  );
+}
+
+** end of styles.css **
+
