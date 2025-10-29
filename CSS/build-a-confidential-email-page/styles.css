@@ -1,0 +1,20 @@
+#email {
+  padding: 50px;
+  margin: 50px 0 0 0;
+  width: 500px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+
+#confidential,
+#top-secret {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 0 0 10px;
+  border: 1px solid #f00;
+  transform: rotate(-45deg);
+}
+
+.blurred {
+  filter: blur(3px);
+}
