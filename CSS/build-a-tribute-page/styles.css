@@ -1,0 +1,25 @@
+img {
+  display: block;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  margin: 20px 0;
+}
+
+#tribute-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#tribute-link:hover {
+  background-color: #0056B3;  
+}
