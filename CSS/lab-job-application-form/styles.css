@@ -1,0 +1,53 @@
+label,
+input,
+select,
+textarea,
+button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.radio-group input[type="radio"],
+.radio-group label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: gold;
+  outline: none;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+button:hover {
+  background-color: turquoise;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: tan;
+  background-color: purple;
+  box-shadow: 0 0 5px 2px silver;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: pink;
+}
+
+input:first-of-type {
+  border-color: blue;
+  background-color: lightblue;
+  border-radius: 10px;  
+}
