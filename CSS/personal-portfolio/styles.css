@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #f00;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1)
+}
+
+#navbar > a {
+  margin: 1rem .75rem;
+  color: #fff;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  border-radius: 4px;
+  background: #444;
+  transition: background 0.2s;
+}
+
+#navbar > a:hover {
+  background: #08f;
+}
+
+#welcome-section {
+  margin-top: 70px;
+}
+
+.project-tile a {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #eee;
+  border-radius: 6px;
+  color: #222;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.project-tile a:hover {
+  background: #cae;
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    font-size: 0.9em;
+  }
+}
+
+
