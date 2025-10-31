@@ -1,0 +1,11 @@
+** start of script.js **
+
+function confirmEnding(strCheck, strAgainst) {
+  if (strAgainst.length > strCheck.length) {
+    return false;
+  }
+  return strCheck.slice(strCheck.length - strAgainst.length) === strAgainst;
+}
+
+** end of script.js **
+

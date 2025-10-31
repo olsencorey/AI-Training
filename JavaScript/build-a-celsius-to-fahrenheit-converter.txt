@@ -1,0 +1,10 @@
+** start of script.js **
+
+function convertCtoF(num) {
+  return num * (9 / 5) + 32;
+}
+
+console.log(convertCtoF(30));
+
+** end of script.js **
+

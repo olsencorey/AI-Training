@@ -1,0 +1,30 @@
+** start of script.js **
+
+let count = 0;
+
+function cc(card) {
+  if (typeof card === 'number' && card > 1 && card <= 10) {
+    if (card < 7) {
+      count += 1;
+    } else if (card == 10) {
+      count -=1;
+    }
+  } else if (typeof card === 'string') {
+    count -= 1;
+  }
+  
+  if (count <= 0) {
+    return count + " Hold";
+  } else {
+    return count + " Bet";
+  }
+}
+
+console.log(cc(2));
+console.log(cc(3));
+console.log(cc(4));
+console.log(cc(5));
+console.log(cc(6));
+
+** end of script.js **
+
