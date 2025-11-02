@@ -1,0 +1,14 @@
+** start of script.js **
+
+function fearNotLetter(letterRange) {
+  for (let i = 0; i < letterRange.length - 1; i++) {
+    if (letterRange.charCodeAt(i + 1) !== letterRange.charCodeAt(i) + 1) {
+      return String.fromCharCode(letterRange.charCodeAt(i) + 1);
+    }
+  }
+
+  return undefined;
+}
+
+** end of script.js **
+

@@ -1,0 +1,26 @@
+** start of script.js **
+
+function findLongestWordLength(sentence) {
+  const words = sentence.trim().split(/\s+/);
+
+  console.log(words);
+
+  if (words[0] === "") {
+    return 0;
+  }
+
+  let len = 0;
+  for (let i = 0; i < words.length; i++) {
+     if (words[i].length > len) {
+       len = words[i].length
+     }
+  }
+
+  return len;
+}
+
+let longestWord = findLongestWordLength("I love freeCodeCamp");
+console.log(longestWord);
+
+** end of script.js **
+
