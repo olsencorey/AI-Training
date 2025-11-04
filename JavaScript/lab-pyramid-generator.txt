@@ -1,0 +1,26 @@
+** start of script.js **
+
+function pyramid(patternChar, numRows, inverted) {
+  let result = "\n";
+  if (inverted) {
+    for (let i = 0; i < numRows;i++) {
+      let numChars = (numRows - i - 1) * 2 + 1;
+      let numSpaces = i;
+      result += ' '.repeat(numSpaces) + patternChar.repeat(numChars) + '\n';
+    }
+  } else {
+    for (let i = 0; i < numRows;i++) {
+      let numChars = i * 2 + 1;
+      let numSpaces = numRows - i - 1;
+      result += ' '.repeat(numSpaces) + patternChar.repeat(numChars) + '\n';
+    }
+  }
+
+  return result;
+}
+
+console.log(pyramid("o", 4, false));
+console.log(pyramid("p", 5, true));
+
+** end of script.js **
+

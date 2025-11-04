@@ -1,0 +1,21 @@
+** start of script.js **
+
+function pairElement(str) {
+  const pairs = {
+    A: "T",
+    T: "A",
+    C: "G",
+    G: "C"
+  }
+  const result = [];
+  for (let base of str) {
+    result.push([base, pairs[base]]);
+  }
+
+  return result;
+}
+
+console.log(pairElement("CTCTA"));
+
+** end of script.js **
+

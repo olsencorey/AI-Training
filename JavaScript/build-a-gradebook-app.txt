@@ -1,0 +1,52 @@
+** start of script.js **
+
+function getAverage(testScores) {
+   let sum = 0;
+
+  for (let i = 0; i < testScores.length;i++) {
+    sum += testScores[i];
+  }
+
+  return sum / testScores.length;
+}
+
+function getGrade(score) {
+  if (score === 100) {
+    return "A+";
+  } else if (score >= 90) {
+    return "A";
+  } else if (score >= 80) {
+    return "B";
+  } else if (score >= 70) {
+    return "C";
+  } else if (score >= 60) {
+    return "D";
+  }
+
+  return "F";
+}
+
+function hasPassingGrade(score) {
+  let grade = getGrade(score);
+  if (grade === "F") {
+    return false;
+  }
+
+  return true;
+}
+
+function studentMsg(scores, score) {
+   let average = getAverage(scores);
+   let grade = getGrade(score);
+   if (hasPassingGrade(score)) {
+     return `Class average: ${average}. Your grade: ${grade}. You passed the course.`
+   }
+
+   return `Class average: ${average}. Your grade: ${grade}. You failed the course.`
+}
+
+console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+
+** end of script.js **
+

@@ -1,0 +1,28 @@
+** start of script.js **
+
+function convertHTML(str) {
+  const specials = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&apos;'
+  };
+
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (specials[char]) {
+      result += specials[char];
+    } else {
+      result += char;
+    }
+  }
+
+  return result;
+}
+
+console.log(convertHTML("Dolce & Gabbana"));
+
+** end of script.js **
+
