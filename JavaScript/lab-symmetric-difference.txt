@@ -1,0 +1,12 @@
+** start of script.js **
+
+function diffArray(arr1, arr2) {
+  let result1 = arr1.filter(value => !arr2.includes(value));
+  let result2 = arr2.filter(value => !arr1.includes(value));
+  return result1.concat(result2);
+}
+
+console.log(diffArray([], []));
+
+** end of script.js **
+

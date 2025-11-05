@@ -1,0 +1,30 @@
+** start of script.js **
+
+function smallestCommons(arr) {
+  arr.sort((a, b) => a - b);
+
+  let mult = arr[0];
+
+  for (let i = arr[0] + 1; i <= arr[1]; i++) {
+    mult = lcm(mult, i);
+  }
+
+  return mult;
+}
+
+function lcm(a, b) {
+  return (a * b) / gcd(a, b);
+}
+
+function gcd(a, b) {
+  while (b !== 0) {
+    [a, b] = [b, a % b];
+  }
+
+  return a;
+}
+
+console.log(smallestCommons([23, 18]));
+
+** end of script.js **
+

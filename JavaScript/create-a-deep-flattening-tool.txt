@@ -1,0 +1,21 @@
+** start of script.js **
+
+function steamrollArray(nested) {
+  let result = [];
+
+  function flatten(elem) {
+    if (Array.isArray(elem)) {
+      elem.forEach(flatten);
+    } else {
+      result.push(elem);
+    }
+  }
+
+  flatten(nested);
+  return result;
+}
+
+console.log(steamrollArray([[["a"]], [["b"]]]));
+
+** end of script.js **
+
