@@ -1,0 +1,39 @@
+body.theme-hawaiian {
+  background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+  color: #33691e;
+}
+body.theme-obx {
+  background: linear-gradient(120deg, #0f2027 0%, #2c5364 100%);
+  color: #e0f7fa;
+}
+
+#theme-switcher-button {
+  margin-top: 2em;
+  padding: 1em;
+}
+#theme-dropdown {
+  background: #fff;
+  color: #222;
+  border-radius: 6px;
+  list-style: none;
+  padding: 0;
+  width: 180px;
+  position: absolute;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+#theme-dropdown[hidden] { display: none; }
+#theme-dropdown li {
+  padding: 0.6em 1em;
+  cursor: pointer;
+}
+#theme-dropdown li:hover,
+#theme-dropdown li:focus {
+  background: #fcf7dd;
+  color: #333;
+}
+#theme-message {
+  margin-top: 1em;
+  min-height: 1.5em;
+  font-weight: bold;
+  color: #bb7c1a;
+}
