@@ -1,0 +1,39 @@
+#drum-machine {
+  font-family: 'Arial Rounded MT Bold', cursive;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+#pad-bank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.drum-pad {
+  background-color: #ff5722;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px #c41c00;
+  user-select: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.drum-pad:hover {
+  background-color: #e64a19;
+  box-shadow: 0 6px #a91400;
+}
+
+#display {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
