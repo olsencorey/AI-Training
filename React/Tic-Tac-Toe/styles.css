@@ -1,0 +1,71 @@
+.ttt-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  display: inline-block;
+  border: 6px solid purple;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 0 18px 0 rgba(128,0,128,0.25);
+  background: #f7f6fa;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 65px;
+  height: 65px;
+  background: orange;
+  color: white;
+  font-size: 2rem;
+  margin: 4px;
+  border: 3px solid #7c2ae8;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.square:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px 0 #ff9900;
+}
+
+.redX {
+  color: #e22a2a;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.blueO {
+  color: #2176ff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.message-area {
+  margin: 12px 0;
+  font-size: 1.1em;
+}
+
+#reset {
+  font-weight: bold;
+  padding: 8px 18px;
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  font-size: 1em;
+  transition: background 0.15s;
+}
+#reset:hover {
+  background: #b769ec;
+}
+.winner-text {
+  font-size: 1.2em;
+}
