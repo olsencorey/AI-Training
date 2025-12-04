@@ -1,63 +1,25 @@
-/* file: styles.css */
-* {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-#array-container {
-    max-height: 95vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 2px;
+<body>
+    <main>
+        <div id="array-container">
+            <div id="starting-array"></div>
+        </div>
+        <div id="btn-container">
+            <button id="generate-btn" type="button">Generate Array</button>
+            <button id="sort-btn" type="button">Sort Array</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
 
-}
-
-#array-container>div {
-    min-width: 8rem;
-    height: 2rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    border-radius: 10px;
-    margin-bottom: 0.2rem;
-    border: 2px solid darkgray;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#starting-array {
-    border: 4px solid darkblue !important;
-}
-
-#btn-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-button {
-    padding: 2px;
-    margin: 5px;
-}
-
-span {
-    border-radius: 2px;
-    padding: 0.5px;
-    margin: 0
-}
-
-@media (min-width: 430px) {
-  #array-container>div {
-    min-width: 12rem;    
-  }
-  span {
-    padding: 1px;
-    margin: 1px;
-  }
-}
+</html>
