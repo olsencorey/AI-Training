@@ -1,5 +1,3 @@
-** start of main.py **
-
 import math
 
 class Category:
