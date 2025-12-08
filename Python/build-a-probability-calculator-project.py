@@ -1,5 +1,3 @@
-** start of main.py **
-
 import copy
 import random
 
