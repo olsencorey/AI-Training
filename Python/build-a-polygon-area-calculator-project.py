@@ -1,5 +1,3 @@
-** start of main.py **
-
 from abc import ABC, abstractmethod
 
 class Rectangle(ABC):
