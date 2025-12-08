@@ -1,5 +1,3 @@
-** start of main.py **
-
 def add_time(start, duration, starting_day_of_week=''):
     
     # Split the start string into time and period (AM/PM)
